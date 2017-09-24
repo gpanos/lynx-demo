@@ -194,7 +194,7 @@ function workLoad($target){
     $.ajaxSetup ({ cache: false });
     var spinner  = '<div class="loader">Loading...</div>',
         newFile  = $target.data('file'),
-        newHtml  = '/work/'+ newFile +'.html',
+        newHtml  = '/lynx-demo/work/'+ newFile +'.html',
         newTitle =  $target.find('.card-title').text();
 
         $( '.project-load' ).html(spinner).load(newHtml);
